@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype-variations');
+    font-weight: 300 900;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+    width: 384px;
+    height: 611px;
+    background: #1F1F1F;
+    border-radius: 12px;
+}
+
+img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    width: 304px;
+    height: 45px;
+    background: #333333;
+    border-radius: 8px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+h1 {
+    width: 304px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+p {
+    width: 304px;
+    height: 21px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #C4F82A;
+}
+
+h2 {
+    width: 304px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+a:hover {
+    background: #C4F82A;
+    color: #333333;
+    cursor: url('./assets/images/handcursor.svg'), auto;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 456px;
+    }
+
+    a {
+        width: 376px;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        padding: 24px;
+        gap: 24px;
+        width: 327px;
+        height: 579px;
+    }
+
+    a {
+        width: 279px;
+    }
+}
